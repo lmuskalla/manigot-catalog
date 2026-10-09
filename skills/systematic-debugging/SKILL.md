@@ -41,6 +41,8 @@ Use for ANY technical issue:
 - You're in a hurry (rushing guarantees rework)
 - Manager wants it fixed NOW (systematic is faster than thrashing)
 
+**When no human is reachable** (headless / automated runs): the "ask for help" and "discuss with your human partner" escapes below are unavailable. Stop and report the blocked decision — the hypothesis you cannot test, or the architectural question — rather than attempting another fix or guessing.
+
 ## The Four Phases
 
 You MUST complete each phase before proceeding to the next.

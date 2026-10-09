@@ -28,6 +28,8 @@ Write the test first. Watch it fail. Write minimal code to pass.
 
 Thinking "skip TDD just this once"? Stop. That's rationalization.
 
+**When no human is reachable** (headless / automated runs, e.g. `mg jdi`): there is nobody to ask. Do not guess or silently skip the test. Stop and report the blocked decision — what needs deciding and why — rather than proceeding without a test or expanding scope.
+
 ## The Iron Law
 
 ```
