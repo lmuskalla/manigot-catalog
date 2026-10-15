@@ -30,19 +30,20 @@ session that researches the subject — the report it produces still lands in
 
 ## Where reports live
 
-`docs/reports/<slug>.md` in the project's main worktree — one file per
-report, the filename a short title-derived slug (e.g. `security-audit-2026-10.md`).
-`mg init` creates an empty `docs/reports/` for every initialized project;
-like `docs/backlog/` and `docs/policies/`, reports are plain committed
-markdown — no branch, no id, no worktree machinery of their own.
-
-A copy-me example lives at `project-template/docs/reports/example-report.md`
-in the manigot checkout.
+Write `docs/reports/<slug>.md` in your current worktree — one file per
+report, the filename a short title-derived slug (e.g.
+`security-audit-2026-10.md`). Create `docs/reports/` if it is missing: git
+does not track empty directories, so a fresh clone or a new job worktree
+often lacks it until the first report is committed. In a `report`-type job,
+the report reaches the main branch when the job is merged (`mg done`). Like
+`docs/backlog/` and `docs/policies/`, reports are plain committed markdown —
+no branch, no id, no worktree machinery of their own.
 
 ## Structure
 
 Use the report template's four parts. The frontmatter is a simple non-YAML
-header — `date:` always, `scope:` when it helps:
+header — `date:` always, `scope:` when it helps. Do not add a `read:` line,
+even if an existing report has one; it is set from the UI:
 
 ```markdown
 # Report: <title>
@@ -79,10 +80,3 @@ Rules of thumb:
 - **Be specific in recommendations.** "Name the change" — a recommendation
   that cannot be actioned without further interpretation has not been written
   yet.
-
-## Note on distribution
-
-This checkout ships this skill so checkout-based contributors and host sessions
-see it; installed binaries do not embed skills, so users of an installed `mg`
-get the report skill from the defaults catalog instead (`mg defaults install
-skills/report`). The structure described here is the same either way.
