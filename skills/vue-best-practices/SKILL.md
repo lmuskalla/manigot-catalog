@@ -1,6 +1,6 @@
 ---
 name: vue-best-practices
-description: Use for Vue 3 work - Composition API with script setup and TypeScript, reactivity, composables, SFC structure, and SSR. Strongly prefers Composition API over Options API.
+description: Use for any Vue 3 work - Composition API with script setup and TypeScript, reactivity, composables, SFC structure, SSR, Vue Router (routes, navigation guards, params, lazy loading), and component tests with Vitest and Vue Test Utils. Strongly prefers Composition API over Options API.
 ---
 
 # Vue Best Practices Workflow
@@ -148,3 +148,10 @@ Performance work is a post-functionality pass. Do not optimize before core behav
 - Moved state/side effects into composables if applicable
 - Optional features are used only when requirements demand them.
 - Performance changes were applied only after functionality was complete.
+
+## Other topics
+
+Open these when the task involves them:
+
+- [router.md](router.md) - Vue Router: route definitions, navigation guards, params, nested and dynamic routes, lazy loading.
+- [testing.md](testing.md) - Component tests: Vitest, Vue Test Utils, Testing Library, mocking, async components, Pinia stores, E2E.
