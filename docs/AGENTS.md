@@ -216,7 +216,7 @@ the agent sessions manigot runs, vendor-agnostically, against other projects.
   (`name:`, `description:`, `tools:`, `commit:`, and a `permission:` block)
   plus the agent's role prompt. 6 declare `commit: true`; 11 declare
   `commit: false` (read-only). manigot launches these by name.
-- `skills/` — 78 Agent Skills, one directory each. Required `SKILL.md` whose
+- `skills/` — 81 Agent Skills, one directory each. Required `SKILL.md` whose
   frontmatter is limited to `name:` and a one-line, trigger-rich `description:`;
   optional `references/`, `scripts/`, `assets/`, and `agents/` support dirs;
   vendored skills also carry `LICENSE.txt` + `PROVENANCE.md` recording the
