@@ -14,4 +14,10 @@
     and in `LICENSE.txt`).
   - `description` rewritten to a concise, trigger-first one-liner (upstream's
     were longer).
-  - Body and support files verbatim.
+  - Merged in the sibling skills `vue-router-best-practices` and
+    `vue-testing-best-practices` (same upstream, snapshot, SHA, and license):
+    their `SKILL.md` bodies are now `router.md` and `testing.md` (frontmatter
+    removed), their `reference/*` files moved into `references/` with links
+    updated, `description` widened to cover them, and an "Other topics"
+    section appended to `SKILL.md`.
+  - Otherwise body and support files verbatim.

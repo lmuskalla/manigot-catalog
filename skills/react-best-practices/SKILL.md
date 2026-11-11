@@ -1,6 +1,6 @@
 ---
 name: react-best-practices
-description: Use when writing, reviewing, or refactoring React or Next.js code for performance - eliminating waterfalls, bundle size, server-side and client-side data fetching, re-renders, and rendering. Vercel Engineering rules prioritized by impact.
+description: Use when writing, reviewing, or refactoring React or Next.js code - performance (waterfalls, bundle size, server- and client-side data fetching, re-renders, rendering) and component API design (boolean-prop proliferation, compound components, lifting state, context providers, React 19 APIs). Vercel Engineering rules prioritized by impact.
 ---
 
 # Vercel React Best Practices
@@ -143,3 +143,10 @@ Each rule file contains:
 ## Full Compiled Document
 
 For the complete guide with all rules expanded: `AGENTS.md`
+
+## Composition Patterns
+
+When designing reusable component APIs or refactoring components with many
+boolean props, read [composition.md](composition.md). Its rules live in
+`rules/` alongside these (prefixes `architecture-`, `state-`, `patterns-`,
+`react19-`).

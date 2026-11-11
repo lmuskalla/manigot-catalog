@@ -1,6 +1,6 @@
 ---
 name: backlog-entry
-description: Use when proposing a change to a repository that uses the manigot job workflow but you cannot create a job (no mg access). Write a backlog entry at docs/backlog/<slug>.md whose body a maintainer converts directly into a job brief.
+description: Use when asked to add an idea or item to the project's backlog, or when proposing a change you can't make as a job yourself (no mg access) in a repository that uses the manigot job workflow. Write a backlog entry at docs/backlog/<slug>.md whose body a maintainer converts directly into a job brief.
 ---
 
 # Writing a backlog entry
@@ -20,6 +20,11 @@ stdin. This skill is for when you don't.
 Write the file directly at `docs/backlog/<slug>.md` in the project's main
 checkout — never inside a job worktree. Create `docs/backlog/` if it is
 missing.
+
+In a job session only the job worktree is mounted, so the main checkout is
+not reachable at all. There, don't write the file: give the complete entry
+(in the file shape below) to the user in your reply, or, in an unattended
+run, raise it with the `NEEDS-HUMAN-INPUT:` marker.
 
 `<slug>` is the title lowercased, with every run of non-alphanumeric
 characters collapsed to a single `-` and leading/trailing `-` trimmed
