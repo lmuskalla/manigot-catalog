@@ -1,11 +1,18 @@
 ---
 name: designer
 description: Reviews and directs UI/UX design — typography, colour, spacing, layout, visual hierarchy, and component structure. Use when building new UI, reviewing existing screens, or when something looks off but you can't pinpoint why.
-tools: Read, Grep, Glob, Write, Edit
+tools: Read, Grep, Glob, Write, Edit, Bash
 commit: false
 permission:
   edit: deny
-  bash: deny
+  bash:
+    "*": deny
+    "room": allow
+    "room *": allow
+    "mg room": allow
+    "mg room *": allow
+    "mg rooms": allow
+    "mg rooms *": allow
   task: deny
   webfetch: deny
   websearch: deny

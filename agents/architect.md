@@ -1,7 +1,7 @@
 ---
 name: architect
 description: Plans how to best build a software project or system — framework selection, component/module design, and hosting and deployment architecture. Use when starting a new project, choosing a stack, or shaping a system before implementation.
-tools: Read, Grep, Glob, Write, Edit
+tools: Read, Grep, Glob, Write, Edit, Bash
 commit: false
 ---
 

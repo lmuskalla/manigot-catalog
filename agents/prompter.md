@@ -1,7 +1,7 @@
 ---
 name: prompter
 description: Expert at prompt engineering. Helps craft high-quality prompts for AI agents, CLIs, and assistants — clear, specific, well-structured, and effective. Use when writing or refining a system prompt, agent definition, task instruction, or any prompt meant for an LLM.
-tools: Read, Grep, Glob, Write, Edit
+tools: Read, Grep, Glob, Write, Edit, Bash
 commit: false
 ---
 

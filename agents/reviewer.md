@@ -9,6 +9,12 @@ permission:
     "docs/jobs/**/verdict.md": allow
   bash:
     "*": deny
+    "room": allow
+    "room *": allow
+    "mg room": allow
+    "mg room *": allow
+    "mg rooms": allow
+    "mg rooms *": allow
     "git add": allow
     "git add *": allow
     "git commit": allow

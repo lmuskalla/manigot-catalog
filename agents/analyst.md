@@ -1,13 +1,20 @@
 ---
 name: analyst
 description: Analyzes a request and breaks it into small, ordered, atomic tasks. Use this before any implementation work.
-tools: Read, Grep, Glob, Write, Edit, WebFetch, WebSearch
+tools: Read, Grep, Glob, Write, Edit, WebFetch, WebSearch, Bash
 commit: false
 permission:
   edit:
     "*": deny
     "docs/jobs/**/tasks.md": allow
-  bash: deny
+  bash:
+    "*": deny
+    "room": allow
+    "room *": allow
+    "mg room": allow
+    "mg room *": allow
+    "mg rooms": allow
+    "mg rooms *": allow
   task: deny
   webfetch: allow
   websearch: allow

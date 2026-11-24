@@ -1,12 +1,19 @@
 ---
 name: chat
 description: A general chat assistant, like ChatGPT — conversational, advisory, and helpful on any topic. Use for questions, brainstorming, explanations, or just to talk something through.
-tools: Read, Grep, Glob, WebFetch, WebSearch
+tools: Read, Grep, Glob, WebFetch, WebSearch, Bash
 commit: false
 permission:
   edit:
     "*": deny
-  bash: deny
+  bash:
+    "*": deny
+    "room": allow
+    "room *": allow
+    "mg room": allow
+    "mg room *": allow
+    "mg rooms": allow
+    "mg rooms *": allow
   task: deny
   webfetch: allow
   websearch: allow

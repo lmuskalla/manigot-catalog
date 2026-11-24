@@ -8,6 +8,12 @@ permission:
     "*": deny
   bash:
     "*": deny
+    "room": allow
+    "room *": allow
+    "mg room": allow
+    "mg room *": allow
+    "mg rooms": allow
+    "mg rooms *": allow
     "git log": allow
     "git log *": allow
     "git diff": allow

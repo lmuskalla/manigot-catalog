@@ -7,6 +7,12 @@ permission:
   edit: deny
   bash:
     "*": deny
+    "room": allow
+    "room *": allow
+    "mg room": allow
+    "mg room *": allow
+    "mg rooms": allow
+    "mg rooms *": allow
     "git branch --show-current": allow
     "git branch --show-current *": allow
     "git diff *": allow
