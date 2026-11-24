@@ -212,9 +212,9 @@ the agent sessions manigot runs, vendor-agnostically, against other projects.
   is a Python package managed with `uv`.
 
 ## Architecture
-- `agents/` — 17 agent definitions, one `<name>.md` each: YAML frontmatter
+- `agents/` — 19 agent definitions, one `<name>.md` each: YAML frontmatter
   (`name:`, `description:`, `tools:`, `commit:`, and a `permission:` block)
-  plus the agent's role prompt. 6 declare `commit: true`; 11 declare
+  plus the agent's role prompt. 6 declare `commit: true`; 13 declare
   `commit: false` (read-only). manigot launches these by name.
 - `skills/` — 29 Agent Skills, one directory each. Required `SKILL.md` whose
   frontmatter is limited to `name:` and a one-line, trigger-rich `description:`;
